@@ -1,0 +1,37 @@
+{
+  "@attributes": null,
+  "note": [
+    {
+      "@attributes": {
+        "completed": "true"
+      },
+      "to": "Foo",
+      "from": "Bar",
+      "heading": "Baz",
+      "body": "FooBar!",
+      "createdAt": {
+        "@attributes": null
+      },
+      "updatedAt": {
+        "@attributes": null
+      },
+      "completedAt": "01-01-1970 12:00"
+    },
+    {
+      "@attributes": {
+        "completed": "false"
+      },
+      "to": "Foo",
+      "from": "Bar",
+      "heading": "Baz",
+      "body": "FooBar!",
+      "createdAt": "01-01-1970 10:00",
+      "updatedAt": {
+        "@attributes": null
+      },
+      "completedAt": {
+        "@attributes": null
+      }
+    }
+  ]
+}

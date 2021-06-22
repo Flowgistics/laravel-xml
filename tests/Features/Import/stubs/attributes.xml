@@ -1,0 +1,7 @@
+<note date="01-01-1970">
+    <to>Foo</to>
+    <from send="true">Bar</from>
+    <heading>Baz</heading>
+    <body>FooBar!</body>
+    <id/>
+</note>

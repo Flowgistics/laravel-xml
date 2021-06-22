@@ -1,0 +1,20 @@
+<notes>
+    <note completed="true">
+        <to>Foo</to>
+        <from>Bar</from>
+        <heading>Baz</heading>
+        <body>FooBar!</body>
+        <created_at/>
+        <updated_at/>
+        <completed_at>01-01-1970 12:00</completed_at>
+    </note>
+    <note completed="false">
+        <to>Foo</to>
+        <from>Bar</from>
+        <heading>Baz</heading>
+        <body>FooBar!</body>
+        <created_at>01-01-1970 10:00</created_at>
+        <updated_at/>
+        <completed_at/>
+    </note>
+</notes>

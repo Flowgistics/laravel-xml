@@ -1,0 +1,12 @@
+<notes count="1">
+    <note completed="true">
+        <to.user>test</to.user>
+        <to attr="test">Foo</to>
+        <from>Bar</from>
+        <heading>Baz</heading>
+        <body>FooBar!</body>
+        <created_at/>
+        <updated_at/>
+        <completed_at>01-01-1970 12:00</completed_at>
+    </note>
+</notes>

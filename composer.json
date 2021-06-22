@@ -1,0 +1,65 @@
+{
+  "name": "flowgistics/laravel-xml",
+  "description": "",
+  "keywords": [
+    "XML",
+    "reader",
+    "xml",
+    "laravel"
+  ],
+  "homepage": "https://github.com/Flowgistics/laravel-xml",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Flowgistics",
+      "email": "support@flowgistics.nl",
+      "homepage": "https://flowgistics.nl/",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": ">=8.47",
+    "ext-dom": "*",
+    "ext-simplexml": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.15",
+    "phpunit/phpunit": "^9.3",
+    "spatie/phpunit-snapshot-assertions": "^4.0",
+    "vimeo/psalm": "^4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Flowgistics\\XML\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Flowgistics\\XML\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "psalm": "vendor/bin/psalm",
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Flowgistics\\XML\\XMLServiceProvider"
+      ],
+      "aliases": {
+        "XML": "Flowgistics\\XML\\XMLFacade"
+      }
+    }
+  },
+  "suggest": {
+    "illuminate/view": "Required to use the load view feature.",
+    "laravel/laravel": "Required to use the load view feature."
+  }
+}

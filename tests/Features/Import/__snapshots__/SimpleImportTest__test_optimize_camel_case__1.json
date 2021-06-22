@@ -1,0 +1,22 @@
+{
+  "@attributes": {
+    "count": "1"
+  },
+  "note": {
+    "@attributes": {
+      "completed": "true"
+    },
+    "toUser": "test",
+    "to": "Foo",
+    "from": "Bar",
+    "heading": "Baz",
+    "body": "FooBar!",
+    "createdAt": {
+      "@attributes": null
+    },
+    "updatedAt": {
+      "@attributes": null
+    },
+    "completedAt": "01-01-1970 12:00"
+  }
+}

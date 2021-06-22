@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file>
+    <name>file1</name>
+    <type>pdf</type>
+  </file>
+  <file>
+    <name>file2</name>
+    <type>png</type>
+  </file>
+  <file>
+    <name>file3</name>
+    <type>xml</type>
+  </file>
+</files>
