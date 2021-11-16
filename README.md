@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/flowgistics/laravel-xml/Check%20&%20fix%20styling?label=code%20style)](https://github.com/flowgistics/laravel-xml/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/flowgistics/laravel-xml.svg?style=flat-square)](https://packagist.org/packages/flowgistics/laravel-xml)
 
-This package is optimized XML handling package for Laravel aiming to be easy and fast.
+This package handles importing and exporting XML data from your Laravel application.
 
 The main features are
 
@@ -56,4 +56,3 @@ Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-# xml
