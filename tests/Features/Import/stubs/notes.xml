@@ -1,5 +1,5 @@
 <notes count="1">
-    <note completed="true">
+    <note completed="true" stars="0" shares="1">
         <to.user>test</to.user>
         <to attr="test">Foo</to>
         <from>Bar</from>

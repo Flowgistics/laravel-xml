@@ -1,22 +1,24 @@
 {
-  "@attributes": {
-    "count": "1"
-  },
-  "note": {
     "@attributes": {
-      "completed": "true"
+        "count": "1"
     },
-    "to_user": "test",
-    "to": "Foo",
-    "from": "Bar",
-    "heading": "Baz",
-    "body": "FooBar!",
-    "created_at": {
-      "@attributes": null
-    },
-    "updated_at": {
-      "@attributes": null
-    },
-    "completed_at": "01-01-1970 12:00"
-  }
+    "note": {
+        "@attributes": {
+            "completed": "true",
+            "stars": "0",
+            "shares": "1"
+        },
+        "to_user": "test",
+        "to": "Foo",
+        "from": "Bar",
+        "heading": "Baz",
+        "body": "FooBar!",
+        "created_at": {
+            "@attributes": null
+        },
+        "updated_at": {
+            "@attributes": null
+        },
+        "completed_at": "01-01-1970 12:00"
+    }
 }

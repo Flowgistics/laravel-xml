@@ -31,7 +31,10 @@ class XMLImportTest extends TestCase
         $xml = XML::import($path)->get()->note;
 
         $this->assertEquals('true', $xml->attribute('completed'));
+        $this->assertEquals('0', $xml->attribute('stars', '2'));
+        $this->assertEquals('1', $xml->attribute('shares', '2'));
         $this->assertFalse($xml->hasAttribute('foobar'));
+        $this->assertEquals('default value', $xml->attribute('baz', 'default value'));
         $this->assertEquals('default value', $xml->attribute('baz', 'default value'));
     }
 }
