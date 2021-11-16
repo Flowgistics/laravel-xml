@@ -124,4 +124,30 @@ class ExportFromDataTest extends TestCase
             ->toString();
         $this->assertMatchesXmlSnapshot($xml);
     }
+
+
+    /**
+     * Test exporting a nested string array.
+     */
+    public function test_exports_from_nested_arrays()
+    {
+        $data = [
+            'key1' => [
+                'foo' => 'bar',
+                'bar' => 'baz',
+                'baz' => []
+            ],
+            'key2' => [
+                'a' => 'b',
+                'c' => 'd'
+            ]
+        ];
+
+        $xml = XML::export($data)
+            ->setRootTag('export')
+            ->version('1.0')
+            ->encoding('UTF-8')
+            ->toString();
+        $this->assertMatchesXmlSnapshot($xml);
+    }
 }

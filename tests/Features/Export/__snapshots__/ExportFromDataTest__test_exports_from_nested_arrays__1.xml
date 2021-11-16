@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export>
+  <key1>
+    <foo>bar</foo>
+    <bar>baz</bar>
+    <baz/>
+  </key1>
+  <key2>
+    <a>b</a>
+    <c>d</c>
+  </key2>
+</export>

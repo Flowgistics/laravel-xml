@@ -106,8 +106,8 @@ class ArrayExporter extends XMLBuilder implements Exporter
                 $element = $document->createElement($fieldName);
 
                 if (empty($value)) {
-                    $element = $document->createElement($name);
-                    $parent = $root->appendChild($element);
+                    $element = $document->createElement($fieldName);
+                    $parent = $rootElement->appendChild($element);
                 } elseif (! Arr::isAssoc($value)) {
                     if ($rootElement->parentNode === null) {
                         $element = $document->createElement($name);
