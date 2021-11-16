@@ -125,7 +125,6 @@ class ExportFromDataTest extends TestCase
         $this->assertMatchesXmlSnapshot($xml);
     }
 
-
     /**
      * Test exporting a nested string array.
      */
@@ -135,12 +134,12 @@ class ExportFromDataTest extends TestCase
             'key1' => [
                 'foo' => 'bar',
                 'bar' => 'baz',
-                'baz' => []
+                'baz' => [],
             ],
             'key2' => [
                 'a' => 'b',
-                'c' => 'd'
-            ]
+                'c' => 'd',
+            ],
         ];
 
         $xml = XML::export($data)
