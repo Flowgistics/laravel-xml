@@ -30,6 +30,7 @@ class XMLImportTest extends TestCase
         $path = __DIR__.'/../Features/Import/stubs/notes.xml';
         $xml = XML::import($path)->get()->note;
 
+        $this->assertIsString($xml->attribute('completed'));
         $this->assertEquals('true', $xml->attribute('completed'));
         $this->assertEquals('0', $xml->attribute('stars', '2'));
         $this->assertEquals('1', $xml->attribute('shares', '2'));
