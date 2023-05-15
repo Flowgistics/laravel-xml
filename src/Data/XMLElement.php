@@ -16,7 +16,7 @@ class XMLElement extends SimpleXMLElement
      */
     public function attribute(string $name, mixed $default = null): mixed
     {
-        return !is_null($this->attributes()->{$name}) ? (string)$this->attributes()->{$name} : $default;
+        return ! is_null($this->attributes()->{$name}) ? (string)$this->attributes()->{$name} : $default;
     }
 
     /**
