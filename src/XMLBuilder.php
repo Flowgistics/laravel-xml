@@ -49,9 +49,9 @@ class XMLBuilder
     /**
      * Disable the root tag.
      *
-     * @return self
+     * @return static
      */
-    public function disableRootTag(): self
+    public function disableRootTag(): static
     {
         return $this->setRootTag(false);
     }
@@ -61,9 +61,9 @@ class XMLBuilder
      *
      * @param string|bool $tag the name to use as the root tag. Set to `false` to disable.
      *
-     * @return self
+     * @return static
      */
-    public function setRootTag(string | bool $tag): self
+    public function setRootTag(string | bool $tag): static
     {
         $this->rootTag = $tag;
 
@@ -150,7 +150,7 @@ class XMLBuilder
 
     protected function getRootTag(): string
     {
-        return is_string($this->rootTag) ? $this->rootTag : self::DEFAULT_ROOT;
+        return is_string($this->rootTag) ? $this->rootTag : static::DEFAULT_ROOT;
     }
 
     /**
@@ -170,7 +170,7 @@ class XMLBuilder
     protected function getFieldName(string | int $field): string
     {
         if (! is_string($field)) {
-            $useItemName = $this->rootTag === self::DEFAULT_ROOT || $this->forceItemName;
+            $useItemName = $this->rootTag === static::DEFAULT_ROOT || $this->forceItemName;
 
             return $useItemName ? $this->itemName : Str::singular($this->getRootTag());
         }
